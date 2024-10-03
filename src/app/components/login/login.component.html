@@ -1,0 +1,16 @@
+<div class="fixed inset-0 flex items-center justify-center  bg-opacity-50">
+  <div class="bg-white p-6 rounded shadow-md w-80">
+    <div class="flex justify-between align-bottom mb-2">
+      <h2 class="text-lg font-bold">Iniciar Sesiónsadas</h2>
+      <button routerLink="/" class="text-lg text-gray-600 hover:text-gray-900 p-0 m-0">&times;</button>
+    </div>
+    <form>
+      <label class="block mb-2" for="email">Email:</label>
+      <input type="text" id="email" [formControl]="email" name="email" required class="border rounded w-full p-2 mb-4">
+      <label class="block mb-2" for="password" [formControl]="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required class="border rounded w-full p-2 mb-4">
+      <button (click)="login()" type="submit"
+        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Entrar</button>
+    </form>
+  </div>
+</div>
